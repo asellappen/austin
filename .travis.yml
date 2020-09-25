@@ -18,7 +18,16 @@ jobs:
     - env: TARGET=armv7-unknown-linux-gnueabihf
     - env: TARGET=i686-unknown-linux-gnu
     - env: TARGET=x86_64-unknown-linux-gnu
-    - env: TARGET=powerpc64le-unknown-linux-gnu
+    #Power jobs
+     # Linux
+    - env: TARGET=arm-unknown-linux-gnueabi
+      arch: ppc64le
+    - env: TARGET=armv7-unknown-linux-gnueabihf
+      arch: ppc64le
+    - env: TARGET=i686-unknown-linux-gnu
+      arch: ppc64le
+    - env: TARGET=x86_64-unknown-linux-gnu
+      arch: ppc64le
     
     # OSX
     - env: TARGET=i686-apple-darwin
